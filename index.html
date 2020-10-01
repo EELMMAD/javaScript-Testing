@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,25 +8,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <!-- Link to Css File-->
+    <!-- Link to Css File -->
     <link rel="stylesheet" href="style.css">
 
 
 </head>
+
 <body>
 
-<h1 id="changeMe"> Hello world!</h1>
+<div id="root">
+    <h1 id="welcomeMessage" class="primary" >Hello world!</h1>
+</div>
 
-<button id="btnDont"> Dont Click Me!</button>
-<button onclick="this.innerHTML = 'Hello'; ">Click Me!</button>
+<button id="btnDont">Dont Click Me!</button>
 
-
-<ul class="squareMarksList">
-    <li>Something 1</li>
-    <li>Something 2</li>
-    <li>Something 3</li>
-    <li>Something 4</li>
-</ul>
+<!-- Calling A EventListener in the element -->
+<button onclick="this.innerHTML='Hello';"> Click Me!</button>
 
 <ul class="squareMarksList">
     <li>Something 1</li>
@@ -34,9 +32,17 @@
     <li>Something 4</li>
 </ul>
 
-<h2 id="secret"> Secret Under this Text? </h2>
+<ul class="squareMarksList">
+    <li>Something 1</li>
+    <li>Something 2</li>
+    <li>Something 3</li>
+    <li>Something 4</li>
+</ul>
 
-<div id="ticTackBoard">
+<h2 id="secret">Secret Under This Text?</h2>
+
+
+<div id="ticTacBoard">
 
     <div></div>
     <div></div>
@@ -53,8 +59,22 @@
 </div>
 
 
-<!-- For accessing  Javascript File-->
+
+<p id="textTrigger1" onmouseover="textChange()" onmouseleave="resetText(this)">Triggers Text change</p>
+
+<p id="textTrigger2" onmouseleave="resetText(this)" >Triggers Text change</p>
+
+<p id="textTrigger3">Triggers Text change</p>
+
+
+<div id="addStuff">
+    <h1>Adding stuff below</h1>
+</div>
+
+
+
+<!-- For accessing JavaScript File -->
 <script src="index.js"></script>
 </body>
-</html>
 
+</html>

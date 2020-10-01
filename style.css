@@ -1,3 +1,10 @@
+
+.primary{
+font-family: "Roboto Light", Serif;
+    font-size: 5rem;
+    color: cornsilk;
+}
+
 .squareMarksList {
     list-style: square;
     background-color: beige;
@@ -5,7 +12,6 @@
 
 .evenUl {
     background-color: cornflowerblue;
-
 }
 
 .oddUl {
